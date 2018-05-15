@@ -38,6 +38,7 @@
 }
 
 //图片动画
+//配套简书：https://www.jianshu.com/p/b63f25b0ae2d
 - (void)setupYYImage{
     //********************
     //1、显示动画类型gif的图片
@@ -93,6 +94,13 @@
     //    imageViewFrame.autoPlayAnimatedImage = NO;//关闭自动播放功能
 }
 
+/**
+ currentAnimatedImageIndex animatedImageFrameCount.
+ 
+ 设置currentAnimatedImageIndex显示指定的图片.
+ animatedImageFrameCount动画一共有多少张图，可用来计算进度.
+ 精灵图动画currentAnimatedImageIndex属性必须在动画执行过程中才会生效，如果动画停止无反应
+ */
 - (IBAction)playPauseAction:(UIButton *)sender {
     sender.selected = !sender.selected;
     if (sender.selected){
