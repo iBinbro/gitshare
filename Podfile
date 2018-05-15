@@ -14,6 +14,7 @@ target 'YYKitStudy' do
     platform :ios, '8.0'
     project 'YYKitStudy/YYKitStudy.xcodeproj' #工程路径
     pod 'YYKit'
+    pod 'Masonry', '~> 1.0.2'
 end
 
 target 'demo2' do
