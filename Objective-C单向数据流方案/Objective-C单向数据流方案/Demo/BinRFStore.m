@@ -15,6 +15,7 @@
 
 @implementation BinRFStore
 
+//实现
 + (instancetype)sharedInstance{
     static dispatch_once_t onceToken;
     static BinRFStore *instance;

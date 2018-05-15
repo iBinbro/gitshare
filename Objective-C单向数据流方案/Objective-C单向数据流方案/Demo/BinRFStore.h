@@ -13,10 +13,10 @@
 
 + (instancetype)sharedInstance;
 
-#pragma mark - getter
+#pragma mark - getter 获取数据
 - (NSString *)nickname;
 
-#pragma mark - action
+#pragma mark - action 修改数据
 - (void)actionChangeNickname:(NSString *)nick;
 - (void)actionChangeMoney:(CGFloat)money;
 
