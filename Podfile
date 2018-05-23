@@ -15,6 +15,8 @@ target 'YYKitStudy' do
     project 'YYKitStudy/YYKitStudy.xcodeproj' #工程路径
     pod 'YYKit'
     pod 'Masonry', '~> 1.0.2'
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'GYHttpMock'
 end
 
 target 'demo2' do
@@ -22,5 +24,10 @@ target 'demo2' do
     project 'demo2/demo2.xcodeproj' #工程路径
     pod 'AFNetworking', '~> 3.1.0'
     pod 'Masonry', '~> 1.0.2'
+end
+
+target '语音识别 智能客服 Demo' do
+    platform :ios, '8.0'
+    project '语音识别 智能客服 Demo/语音识别 智能客服 Demo.xcodeproj' #工程路径
 end
 
