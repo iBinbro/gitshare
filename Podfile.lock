@@ -14,6 +14,21 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - GYHttpMock (1.0.1)
   - Masonry (1.0.2)
   - YTKNetwork (2.0.4):
@@ -24,6 +39,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - BlocksKit (= 2.2.5)
   - GYHttpMock
   - Masonry (~> 1.0.2)
   - YTKNetwork
@@ -32,6 +48,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - BlocksKit
     - GYHttpMock
     - Masonry
     - YTKNetwork
@@ -39,11 +56,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   GYHttpMock: ad08e55ce8bde4e7f7b4d0cbc79ff23c1311658b
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   YTKNetwork: df8a7a5597bda1664a4efaa7ef871a818a887fe0
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 2a55e21fedd3b8e041857d71fab828d6d67a244f
+PODFILE CHECKSUM: 23a92cdb8f955842f09cc8e5411def89fccbfec8
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3
