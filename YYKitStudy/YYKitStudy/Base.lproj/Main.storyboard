@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +21,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="👋" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fjz-UC-zLH">
+                                <rect key="frame" x="33" y="216" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Fjz-UC-zLH" firstAttribute="top" secondItem="3Gl-jd-XNV" secondAttribute="bottom" constant="196" id="2zq-x6-vXr"/>
+                            <constraint firstItem="Fjz-UC-zLH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="3oC-OA-YNC"/>
+                            <constraint firstItem="rfx-bH-ILy" firstAttribute="top" secondItem="Fjz-UC-zLH" secondAttribute="bottom" constant="323" id="Igz-Ia-GCg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fjz-UC-zLH" secondAttribute="trailing" constant="86" id="TZl-Pt-HVw"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textViewDemo" destination="Fjz-UC-zLH" id="lB2-Fa-oL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

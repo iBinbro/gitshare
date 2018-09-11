@@ -13,6 +13,7 @@
 #import <AFNetworking.h>
 
 @interface ViewController (){
+    __weak IBOutlet UITextView *textViewDemo;
 }
 
 @end
@@ -22,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"%@", textViewDemo.text);
 }
 
 - (void)viewDidAppear:(BOOL)animated{
@@ -31,7 +33,7 @@
 //    [self presentVC];
     
     //httpMockDemo
-    [self httpMock];
+//    [self httpMock];
 }
 
 - (void)presentVC{

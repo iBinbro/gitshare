@@ -31,3 +31,9 @@ target '语音识别 智能客服 Demo' do
     project '语音识别 智能客服 Demo/语音识别 智能客服 Demo.xcodeproj' #工程路径
 end
 
+target 'YTKNetworkStudy' do
+    platform :ios, '8.0'
+    project 'YTKNetworkStudy/YTKNetworkStudy.xcodeproj' #工程路径
+    pod 'YTKNetwork'
+end
+
